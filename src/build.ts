@@ -28,6 +28,7 @@ function mutateTsConf(tsConf: any, monorepoPrefix: string) {
       paths: {
         [`${monorepoPrefix}/*`]: ["../packages/*/src/index.ts"],
         ...tsConf.compilerOptions?.paths,
+        "*": ["../packages/client/node_modules/*"],
       },
     },
   };

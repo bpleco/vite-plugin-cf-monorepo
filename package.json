@@ -1,6 +1,6 @@
 {
   "name": "@bpleco/vite-plugin-cf-monorepo",
-  "version": "0.0.1",
+  "version": "0.1.2",
   "description": "Build plugin for cloudflare pages monorepo",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -16,7 +16,8 @@
   ],
   "scripts": {
     "build": "tsup",
-    "dev": "tsup --watch"
+    "dev": "tsup --watch",
+    "pub": "npm publish --access=public"
   },
   "keywords": [],
   "author": "Ben Pleco",
